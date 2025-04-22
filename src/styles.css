@@ -34,7 +34,6 @@
 /* #region header */
 .header {
   box-sizing: border-box;
-  padding: 24px 20px 40px;
   height: 100vh;
   background-image: url(images/header-bg-mobile.png);
   background-size: cover ;
@@ -45,17 +44,6 @@
   justify-content: space-between;
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__icons {
-  display: flex;
-  gap: 24px;
-}
-
 .header__title {
   margin: 0;
   font-size: 36px;
@@ -64,25 +52,46 @@
   vertical-align: middle;
 }
 
+.header__bottom {
+  padding: 0 20px 40px;
+}
+
 /* #endregion */
 
 /* #region menu */
+.top-bar {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.top-bar__logo {
+  display: flex;
+}
+
 .menu {
   box-sizing: border-box;
-  padding: 24px 20px 40px;
   height: 100vh;
   background-color: #E5E6E8;
   font-weight: 700;
+}
+
+.menu__top {
+  margin-bottom: 32px;
 }
 
 .menu__nav {
   margin-bottom: 48px;
 }
 
-.menu__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu__content {
+  padding-inline: 20px;
 }
 
 .menu__phone-number {
@@ -105,11 +114,6 @@
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.menu__icons {
-  display: flex;
-  gap: 24px;
 }
 
 /* #endregion */
